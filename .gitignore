@@ -1,0 +1,10 @@
+.DS_Store
+.venv/
+.playwright-browsers/
+__pycache__/
+*.pyc
+out/
+out.zip
+out-shots/
+out-all/
+out-all-shots/

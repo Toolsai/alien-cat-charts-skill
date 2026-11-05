@@ -1,0 +1,49 @@
+{
+  "id": "timeline-example",
+  "title": "外賣員嘅一日",
+  "icon": "⏱️",
+  "summary": "六個時間點睇一日工作。",
+  "chartType": "timeline",
+  "background": "cosmos",
+  "mascot": "blob_buddy",
+  "data": {
+    "events": [
+      {
+        "when": "08:00",
+        "icon": "☕",
+        "title": "上班打卡",
+        "text": "喝杯星際咖啡，檢查飛碟電量。"
+      },
+      {
+        "when": "10:30",
+        "icon": "📞",
+        "title": "第一張單",
+        "text": "收到火星咖啡店嘅訂單。"
+      },
+      {
+        "when": "12:00",
+        "icon": "🍜",
+        "title": "午市高峰",
+        "text": "訂單爆多，所有飛碟出動。"
+      },
+      {
+        "when": "15:00",
+        "icon": "🔋",
+        "title": "充電",
+        "text": "喺停機坪充電 30 分鐘。"
+      },
+      {
+        "when": "18:00",
+        "icon": "🌠",
+        "title": "流星雨",
+        "text": "改行安全航道，仍然準時。"
+      },
+      {
+        "when": "22:00",
+        "icon": "🛌",
+        "title": "收工",
+        "text": "交回飛碟，回家瞓覺。"
+      }
+    ]
+  }
+}

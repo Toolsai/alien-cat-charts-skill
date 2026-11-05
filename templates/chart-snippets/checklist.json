@@ -1,0 +1,38 @@
+{
+  "id": "checklist-example",
+  "title": "出發前檢查清單",
+  "icon": "✅",
+  "summary": "每次起飛前要做嘅五件事。",
+  "chartType": "checklist",
+  "background": "starfield",
+  "mascot": "space_dog",
+  "data": {
+    "items": [
+      {
+        "icon": "🔋",
+        "text": "電量超過 80%",
+        "detail": "電量不足會喺半路停機。"
+      },
+      {
+        "icon": "📦",
+        "text": "保溫箱扣好",
+        "detail": "防止外賣喺高速時飛出去。"
+      },
+      {
+        "icon": "🧭",
+        "text": "航道已更新",
+        "detail": "避開黑洞同流星雨。"
+      },
+      {
+        "icon": "📡",
+        "text": "通訊正常",
+        "detail": "同指揮塔保持聯絡。"
+      },
+      {
+        "icon": "😺",
+        "text": "貓咪已繫好安全帶",
+        "detail": "安全第一。"
+      }
+    ]
+  }
+}

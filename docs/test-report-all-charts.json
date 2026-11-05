@@ -1,0 +1,257 @@
+{
+  "site": "all-charts demo",
+  "widths": {
+    "1280": {
+      "pages": {
+        "map": {
+          "type": "hotspots",
+          "clicked": [
+            "btn-nextx12",
+            "btn-labelsx1",
+            "btn-resetx1",
+            ".hs-spotx4"
+          ],
+          "status_changed": true,
+          "sound_on": {
+            "paused": false,
+            "t": 1.152578,
+            "pressed": "true",
+            "rs": 4,
+            "err": null,
+            "dur": 8
+          },
+          "sound_off": {
+            "paused": true,
+            "pressed": "false"
+          }
+        },
+        "route": {
+          "type": "flowchart",
+          "clicked": [
+            "btn-play",
+            "btn-nextx5",
+            "btn-altx1",
+            "btn-resetx1",
+            ".fc-nodex9",
+            ".fc-labelx4"
+          ],
+          "status_changed": true
+        },
+        "day": {
+          "type": "timeline",
+          "clicked": [
+            "btn-prevx0",
+            "btn-play",
+            "btn-nextx5",
+            "btn-resetx1",
+            ".tl-dotx6"
+          ],
+          "status_changed": true
+        },
+        "story": {
+          "type": "comic",
+          "clicked": [
+            "btn-prevx0",
+            "btn-nextx2",
+            "btn-play",
+            "btn-resetx1",
+            ".cm-dots buttonx3"
+          ],
+          "status_changed": true
+        },
+        "loop": {
+          "type": "cycle",
+          "clicked": [
+            "btn-prevx12",
+            "btn-play",
+            "btn-nextx12",
+            "btn-dirx1",
+            ".cy-planetx5"
+          ],
+          "status_changed": true
+        },
+        "vs": {
+          "type": "compare",
+          "clicked": [
+            "btn-play",
+            "btn-nextx2",
+            "btn-allx1",
+            "btn-resetx1",
+            ".cp-rowx3"
+          ],
+          "status_changed": true
+        },
+        "check": {
+          "type": "checklist",
+          "clicked": [
+            "btn-nextx5",
+            "btn-allx0",
+            "btn-resetx1",
+            ".ck-itemx5"
+          ],
+          "status_changed": true
+        },
+        "words": {
+          "type": "flashcards",
+          "clicked": [
+            "btn-prevx0",
+            "btn-flipx1",
+            "btn-nextx3",
+            "btn-resetx1",
+            ".fl-cardx1"
+          ],
+          "status_changed": true
+        },
+        "quiz": {
+          "type": "quiz",
+          "clicked": [
+            "btn-nextx0",
+            "btn-peekx1",
+            "btn-resetx1",
+            "quiz-finish"
+          ],
+          "status_changed": true
+        }
+      },
+      "sound_after_nav": {
+        "on": true,
+        "playing": true,
+        "err": null
+      },
+      "errors": 0
+    },
+    "390": {
+      "pages": {
+        "map": {
+          "type": "hotspots",
+          "clicked": [
+            "btn-nextx12",
+            "btn-labelsx1",
+            "btn-resetx1",
+            ".hs-spotx4"
+          ],
+          "status_changed": true,
+          "sound_on": {
+            "paused": false,
+            "t": 1.154282,
+            "pressed": "true",
+            "rs": 4,
+            "err": null,
+            "dur": 8
+          },
+          "sound_off": {
+            "paused": true,
+            "pressed": "false"
+          }
+        },
+        "route": {
+          "type": "flowchart",
+          "clicked": [
+            "btn-play",
+            "btn-nextx5",
+            "btn-altx1",
+            "btn-resetx1",
+            ".fc-nodex9",
+            ".fc-labelx4"
+          ],
+          "status_changed": true
+        },
+        "day": {
+          "type": "timeline",
+          "clicked": [
+            "btn-prevx0",
+            "btn-play",
+            "btn-nextx5",
+            "btn-resetx1",
+            ".tl-dotx6"
+          ],
+          "status_changed": true
+        },
+        "story": {
+          "type": "comic",
+          "clicked": [
+            "btn-prevx0",
+            "btn-nextx2",
+            "btn-play",
+            "btn-resetx1",
+            ".cm-dots buttonx3"
+          ],
+          "status_changed": true
+        },
+        "loop": {
+          "type": "cycle",
+          "clicked": [
+            "btn-prevx12",
+            "btn-play",
+            "btn-nextx12",
+            "btn-dirx1",
+            ".cy-planetx5"
+          ],
+          "status_changed": true
+        },
+        "vs": {
+          "type": "compare",
+          "clicked": [
+            "btn-play",
+            "btn-nextx2",
+            "btn-allx1",
+            "btn-resetx1",
+            ".cp-rowx3"
+          ],
+          "status_changed": true
+        },
+        "check": {
+          "type": "checklist",
+          "clicked": [
+            "btn-nextx5",
+            "btn-allx0",
+            "btn-resetx1",
+            ".ck-itemx5"
+          ],
+          "status_changed": true
+        },
+        "words": {
+          "type": "flashcards",
+          "clicked": [
+            "btn-prevx0",
+            "btn-flipx1",
+            "btn-nextx3",
+            "btn-resetx1",
+            ".fl-cardx1"
+          ],
+          "status_changed": true
+        },
+        "quiz": {
+          "type": "quiz",
+          "clicked": [
+            "btn-nextx0",
+            "btn-peekx1",
+            "btn-resetx1",
+            "quiz-finish"
+          ],
+          "status_changed": true
+        }
+      },
+      "sound_after_nav": {
+        "on": true,
+        "playing": true,
+        "err": null
+      },
+      "errors": 0
+    }
+  },
+  "failures": [],
+  "ignored": 0,
+  "order": [
+    "map",
+    "route",
+    "day",
+    "story",
+    "loop",
+    "vs",
+    "check",
+    "words",
+    "quiz"
+  ],
+  "ok": true
+}

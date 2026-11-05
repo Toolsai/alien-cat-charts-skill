@@ -1,0 +1,39 @@
+{
+  "id": "compare-example",
+  "title": "飛碟 vs 太空巴士",
+  "icon": "⚔️",
+  "summary": "兩種送餐方式比一比。",
+  "chartType": "compare",
+  "background": "nebula",
+  "mascot": "tentacle_buddy",
+  "data": {
+    "left": {
+      "title": "小飛碟",
+      "icon": "🛸",
+      "char": "ufo"
+    },
+    "right": {
+      "title": "太空巴士",
+      "icon": "🚌",
+      "char": "robot_buddy"
+    },
+    "rows": [
+      {
+        "label": "速度",
+        "a": "非常快",
+        "b": "慢"
+      },
+      {
+        "label": "載量",
+        "a": "一次一單",
+        "b": "一次 50 單"
+      },
+      {
+        "label": "成本",
+        "a": "較貴",
+        "b": "較平"
+      }
+    ],
+    "verdict": "趕時間用飛碟，大量訂單用太空巴士。"
+  }
+}

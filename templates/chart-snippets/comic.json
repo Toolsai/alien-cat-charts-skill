@@ -1,0 +1,37 @@
+{
+  "id": "comic-example",
+  "title": "第一日返工（漫畫）",
+  "icon": "💬",
+  "summary": "新人外星貓第一日遇到難題。",
+  "chartType": "comic",
+  "background": "blackhole",
+  "mascot": "cat_cheer",
+  "data": {
+    "panels": [
+      {
+        "title": "清晨出門",
+        "char": "cat_wave",
+        "scene": "starfield",
+        "say": "早晨！今日係我第一日送外賣，好緊張呀！",
+        "caption": "小貓走入飛碟。"
+      },
+      {
+        "title": "發現黑洞",
+        "char": "cat_think",
+        "char2": "robot_buddy",
+        "speaker": 2,
+        "scene": "blackhole",
+        "say": "前面有個黑洞，千祈唔好行入去！改行右邊航道。",
+        "caption": "機械人副駕駛提醒。"
+      },
+      {
+        "title": "成功送達",
+        "char": "cat_cheer",
+        "char2": "space_dog",
+        "scene": "moonbase",
+        "say": "訂單送到喇！客人畀咗五星好評！",
+        "caption": "太空狗客人好開心。"
+      }
+    ]
+  }
+}

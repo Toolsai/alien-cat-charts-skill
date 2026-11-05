@@ -1,0 +1,47 @@
+{
+  "id": "hotspots-example",
+  "title": "基地地圖",
+  "icon": "🗺️",
+  "summary": "先認識外賣基地入面五個重要地方。",
+  "points": [
+    "㩒圓點睇資料",
+    "懸停會顯示名稱"
+  ],
+  "chartType": "hotspots",
+  "background": "moonbase",
+  "mascot": "robot_buddy",
+  "data": {
+    "scene": "moonbase",
+    "guide": "cat_wave",
+    "spots": [
+      {
+        "x": 25,
+        "y": 62,
+        "icon": "🍳",
+        "title": "廚房艙",
+        "text": "所有外賣喺呢度煮好，再放入保溫箱。"
+      },
+      {
+        "x": 52,
+        "y": 55,
+        "icon": "🛸",
+        "title": "停機坪",
+        "text": "飛碟喺呢度充電同裝貨。"
+      },
+      {
+        "x": 76,
+        "y": 30,
+        "icon": "📡",
+        "title": "指揮塔",
+        "text": "收訂單同規劃路線。"
+      },
+      {
+        "x": 82,
+        "y": 74,
+        "icon": "🔧",
+        "title": "維修站",
+        "text": "壞咗嘅飛碟會送去維修。"
+      }
+    ]
+  }
+}

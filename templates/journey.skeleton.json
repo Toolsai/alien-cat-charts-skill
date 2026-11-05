@@ -1,0 +1,177 @@
+{
+  "id": "my-journey",
+  "title": "TODO 旅程標題 · Journey title",
+  "subtitle": "TODO 一兩句講呢個旅程學咩（≤ 80 字）",
+  "lang": "zh-Hant",
+  "source": {
+    "title": "TODO source title",
+    "url": "https://example.com",
+    "license": "TODO license / permission"
+  },
+  "cast": [
+    "alien_green",
+    "cat_wave",
+    "space_dog"
+  ],
+  "indexBackground": "starfield",
+  "sections": [
+    {
+      "id": "intro-map",
+      "title": "TODO 第一站",
+      "icon": "🌍",
+      "summary": "TODO 一句概括（≤ 110 字）",
+      "points": [
+        "TODO 重點 1",
+        "TODO 重點 2"
+      ],
+      "sourceRef": "TODO 原文章節",
+      "chartType": "hotspots",
+      "background": "starfield",
+      "mascot": "robot_buddy",
+      "data": {
+        "scene": "moonbase",
+        "guide": "cat_wave",
+        "spots": [
+          {
+            "x": 25,
+            "y": 62,
+            "icon": "🍳",
+            "title": "廚房艙",
+            "text": "所有外賣喺呢度煮好，再放入保溫箱。"
+          },
+          {
+            "x": 52,
+            "y": 55,
+            "icon": "🛸",
+            "title": "停機坪",
+            "text": "飛碟喺呢度充電同裝貨。"
+          },
+          {
+            "x": 76,
+            "y": 30,
+            "icon": "📡",
+            "title": "指揮塔",
+            "text": "收訂單同規劃路線。"
+          },
+          {
+            "x": 82,
+            "y": 74,
+            "icon": "🔧",
+            "title": "維修站",
+            "text": "壞咗嘅飛碟會送去維修。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "how-it-works",
+      "title": "TODO 第二站",
+      "icon": "🔄",
+      "summary": "TODO",
+      "points": [
+        "TODO"
+      ],
+      "chartType": "flowchart",
+      "background": "cosmos",
+      "mascot": "cat_point",
+      "data": {
+        "start": "o",
+        "nodes": [
+          {
+            "id": "o",
+            "type": "start",
+            "text": "收到訂單",
+            "next": "k"
+          },
+          {
+            "id": "k",
+            "type": "step",
+            "text": "廚房煮好",
+            "next": "w"
+          },
+          {
+            "id": "w",
+            "type": "decision",
+            "text": "天氣好唔好？",
+            "yes": "f",
+            "no": "s",
+            "yesLabel": "好",
+            "noLabel": "有流星雨"
+          },
+          {
+            "id": "s",
+            "type": "step",
+            "text": "改行安全航道",
+            "next": "f"
+          },
+          {
+            "id": "f",
+            "type": "step",
+            "text": "飛碟起飛",
+            "next": "d"
+          },
+          {
+            "id": "d",
+            "type": "decision",
+            "text": "客人喺家？",
+            "yes": "h",
+            "no": "l",
+            "yesLabel": "喺",
+            "noLabel": "唔喺"
+          },
+          {
+            "id": "l",
+            "type": "step",
+            "text": "放喺門口保溫箱",
+            "next": "e"
+          },
+          {
+            "id": "h",
+            "type": "step",
+            "text": "親手交畀客人",
+            "next": "e"
+          },
+          {
+            "id": "e",
+            "type": "end",
+            "text": "送達！收好評",
+            "next": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "quiz",
+      "title": "TODO 小測驗",
+      "icon": "🧠",
+      "summary": "TODO",
+      "chartType": "quiz",
+      "background": "moonbase",
+      "mascot": "space_dog",
+      "data": {
+        "questions": [
+          {
+            "q": "遇到流星雨應該點做？",
+            "options": [
+              "硬闖",
+              "改行安全航道",
+              "停機等雨停"
+            ],
+            "answer": 1,
+            "explain": "改行安全航道可以準時又安全。"
+          },
+          {
+            "q": "起飛前電量最少要幾多？",
+            "options": [
+              "20%",
+              "50%",
+              "80%"
+            ],
+            "answer": 2,
+            "explain": "超過 80% 先夠安全。"
+          }
+        ]
+      }
+    }
+  ]
+}

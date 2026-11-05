@@ -1,0 +1,69 @@
+{
+  "id": "ufo-delivery-101",
+  "title": "飛碟外賣新手訓練營",
+  "subtitle": "一個用嚟示範全部 9 種圖表嘅原創小故事：外星貓同伴帶你學識飛碟外賣。",
+  "lang": "zh-Hant",
+  "source": {"title": "原創示範內容 · Original sample content", "license": "CC0"},
+  "cast": ["cat_cheer", "tentacle_buddy", "robot_buddy"],
+  "indexBackground": "cosmos",
+  "sections": [
+    {"id": "map", "title": "基地地圖", "icon": "🗺️", "summary": "先認識外賣基地入面五個重要地方。", "points": ["㩒圓點睇資料", "懸停會顯示名稱"], "chartType": "hotspots", "background": "moonbase", "mascot": "robot_buddy",
+     "data": {"scene": "moonbase", "guide": "cat_wave", "spots": [
+       {"x": 25, "y": 62, "icon": "🍳", "title": "廚房艙", "text": "所有外賣喺呢度煮好，再放入保溫箱。"},
+       {"x": 52, "y": 55, "icon": "🛸", "title": "停機坪", "text": "飛碟喺呢度充電同裝貨。"},
+       {"x": 76, "y": 30, "icon": "📡", "title": "指揮塔", "text": "收訂單同規劃路線。"},
+       {"x": 82, "y": 74, "icon": "🔧", "title": "維修站", "text": "壞咗嘅飛碟會送去維修。"}]}},
+    {"id": "route", "title": "派送流程（直向）", "icon": "📦", "summary": "一張外賣由落單到送到門口嘅流程；節點多會自動轉直向排版。", "chartType": "flowchart", "background": "nebula", "mascot": "cat_point",
+     "data": {"start": "o", "nodes": [
+       {"id": "o", "type": "start", "text": "收到訂單", "next": "k"},
+       {"id": "k", "type": "step", "text": "廚房煮好", "next": "w"},
+       {"id": "w", "type": "decision", "text": "天氣好唔好？", "yes": "f", "no": "s", "yesLabel": "好", "noLabel": "有流星雨"},
+       {"id": "s", "type": "step", "text": "改行安全航道", "next": "f"},
+       {"id": "f", "type": "step", "text": "飛碟起飛", "next": "d"},
+       {"id": "d", "type": "decision", "text": "客人喺家？", "yes": "h", "no": "l", "yesLabel": "喺", "noLabel": "唔喺"},
+       {"id": "l", "type": "step", "text": "放喺門口保溫箱", "next": "e"},
+       {"id": "h", "type": "step", "text": "親手交畀客人", "next": "e"},
+       {"id": "e", "type": "end", "text": "送達！收好評", "next": null}]}},
+    {"id": "day", "title": "外賣員嘅一日", "icon": "⏱️", "summary": "六個時間點睇一日工作。", "chartType": "timeline", "background": "cosmos", "mascot": "blob_buddy",
+     "data": {"events": [
+       {"when": "08:00", "icon": "☕", "title": "上班打卡", "text": "喝杯星際咖啡，檢查飛碟電量。"},
+       {"when": "10:30", "icon": "📞", "title": "第一張單", "text": "收到火星咖啡店嘅訂單。"},
+       {"when": "12:00", "icon": "🍜", "title": "午市高峰", "text": "訂單爆多，所有飛碟出動。"},
+       {"when": "15:00", "icon": "🔋", "title": "充電", "text": "喺停機坪充電 30 分鐘。"},
+       {"when": "18:00", "icon": "🌠", "title": "流星雨", "text": "改行安全航道，仍然準時。"},
+       {"when": "22:00", "icon": "🛌", "title": "收工", "text": "交回飛碟，回家瞓覺。"}]}},
+    {"id": "story", "title": "第一日返工（漫畫）", "icon": "💬", "summary": "新人外星貓第一日遇到難題。", "chartType": "comic", "background": "blackhole", "mascot": "cat_cheer",
+     "data": {"panels": [
+       {"title": "清晨出門", "char": "cat_wave", "scene": "starfield", "say": "早晨！今日係我第一日送外賣，好緊張呀！", "caption": "小貓走入飛碟。"},
+       {"title": "發現黑洞", "char": "cat_think", "char2": "robot_buddy", "speaker": 2, "scene": "blackhole", "say": "前面有個黑洞，千祈唔好行入去！改行右邊航道。", "caption": "機械人副駕駛提醒。"},
+       {"title": "成功送達", "char": "cat_cheer", "char2": "space_dog", "scene": "moonbase", "say": "訂單送到喇！客人畀咗五星好評！", "caption": "太空狗客人好開心。"}]}},
+    {"id": "loop", "title": "飛碟日常循環", "icon": "🔁", "summary": "接單、煮餐、送餐、充電，天天重複。", "chartType": "cycle", "background": "asteroids", "mascot": "alien_green",
+     "data": {"center": {"text": "每日循環", "char": "cat_wave"}, "stages": [
+       {"icon": "📱", "title": "接單", "text": "指揮塔收到訂單並派畀最近嘅飛碟。"},
+       {"icon": "🍳", "title": "煮餐", "text": "廚房艙煮好外賣放入保溫箱。"},
+       {"icon": "🛸", "title": "送餐", "text": "飛碟沿航道送去客人門口。"},
+       {"icon": "🔋", "title": "充電", "text": "返停機坪充電，準備下一單。"},
+       {"icon": "⭐", "title": "評價", "text": "客人留言，基地根據評價改進。"}]}},
+    {"id": "vs", "title": "飛碟 vs 太空巴士", "icon": "⚔️", "summary": "兩種送餐方式比一比。", "chartType": "compare", "background": "nebula", "mascot": "tentacle_buddy",
+     "data": {"left": {"title": "小飛碟", "icon": "🛸", "char": "ufo"}, "right": {"title": "太空巴士", "icon": "🚌", "char": "robot_buddy"},
+       "rows": [{"label": "速度", "a": "非常快", "b": "慢"}, {"label": "載量", "a": "一次一單", "b": "一次 50 單"}, {"label": "成本", "a": "較貴", "b": "較平"}],
+       "verdict": "趕時間用飛碟，大量訂單用太空巴士。"}},
+    {"id": "check", "title": "出發前檢查清單", "icon": "✅", "summary": "每次起飛前要做嘅五件事。", "chartType": "checklist", "background": "starfield", "mascot": "space_dog",
+     "data": {"items": [
+       {"icon": "🔋", "text": "電量超過 80%", "detail": "電量不足會喺半路停機。"},
+       {"icon": "📦", "text": "保溫箱扣好", "detail": "防止外賣喺高速時飛出去。"},
+       {"icon": "🧭", "text": "航道已更新", "detail": "避開黑洞同流星雨。"},
+       {"icon": "📡", "text": "通訊正常", "detail": "同指揮塔保持聯絡。"},
+       {"icon": "😺", "text": "貓咪已繫好安全帶", "detail": "安全第一。"}]}},
+    {"id": "words", "title": "太空外賣術語卡", "icon": "🃏", "summary": "翻卡記住四個常用術語。", "chartType": "flashcards", "background": "cosmos", "mascot": "cat_think",
+     "data": {"cards": [
+       {"icon": "🛸", "front": "航道", "back": "飛碟專用嘅安全飛行路線。"},
+       {"icon": "🔋", "front": "滿電", "back": "電量 100%，可以飛 8 小時。"},
+       {"icon": "🕳️", "front": "黑洞警報", "back": "前方有黑洞，立即改道。"},
+       {"icon": "⭐", "front": "五星好評", "back": "客人最高評價。"}]}},
+    {"id": "quiz", "title": "結業小測驗", "icon": "🧠", "summary": "兩條題目，睇睇你學識未。", "chartType": "quiz", "background": "asteroids", "mascot": "blob_buddy",
+     "data": {"questions": [
+       {"q": "遇到流星雨應該點做？", "options": ["硬闖", "改行安全航道", "停機等雨停"], "answer": 1, "explain": "改行安全航道可以準時又安全。"},
+       {"q": "起飛前電量最少要幾多？", "options": ["20%", "50%", "80%"], "answer": 2, "explain": "超過 80% 先夠安全。"}]}}
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "id": "water-cycle",
+  "title": "水循環星際旅程",
+  "subtitle": "跟住外星小隊，由海洋出發，睇水點樣蒸發、變雲、落雨，再流返家。整個旅程取材自維基百科「Water cycle」。",
+  "lang": "zh-Hant",
+  "source": {
+    "title": "Water cycle — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Water_cycle",
+    "license": "CC BY-SA 4.0（內容已翻譯並節錄）"
+  },
+  "cast": ["alien_green", "cat_wave", "space_dog"],
+  "indexBackground": "starfield",
+  "sections": [
+    {
+      "id": "where-is-water",
+      "title": "水藏喺邊度？",
+      "icon": "🌍",
+      "summary": "地球上嘅水大部分「儲存」咗好耐，真正喺循環流動嘅只係一小部分。",
+      "points": ["海洋儲存約 97% 嘅水", "冰蓋同冰川只佔 1.7%，卻係 68.7% 嘅淡水", "大氣入面嘅水平均只停 9 日"],
+      "sourceRef": "Water cycle › Water in storage / Residence times",
+      "chartType": "hotspots",
+      "background": "starfield",
+      "mascot": "robot_buddy",
+      "data": {
+        "scene": "planet",
+        "guide": "robot_buddy",
+        "intro": "㩒地球上閃閃發光嘅圓點，睇睇水藏喺邊度、會停留幾耐。",
+        "spots": [
+          {"x": 22, "y": 68, "icon": "🌊", "title": "海洋", "text": "全球約 13.86 億 km³ 嘅水，有約 13.38 億 km³ 喺海洋，即約 97%；海洋亦係 86% 全球蒸發嘅來源。"},
+          {"x": 52, "y": 16, "icon": "🧊", "title": "冰蓋與冰川", "text": "冰蓋、冰川同永久積雪存有 24,064,000 km³，只佔全球水量 1.7%，卻佔全部淡水 68.7%。"},
+          {"x": 82, "y": 30, "icon": "☁️", "title": "大氣", "text": "水蒸發之後平均只喺大氣停留約 9 日，就會凝結並以降水形式落返地面。"},
+          {"x": 68, "y": 66, "icon": "🏞️", "title": "河流與湖泊", "text": "河流平均停留 2 至 6 個月；湖泊則平均約 50 至 100 年。"},
+          {"x": 40, "y": 86, "icon": "🕳️", "title": "地下水", "text": "淺層地下水約停 100 至 200 年；深層地下水可以停留約 10,000 年，有啲甚至叫「化石水」。"}
+        ]
+      }
+    },
+    {
+      "id": "one-drop",
+      "title": "一滴水嘅旅程",
+      "icon": "💧",
+      "summary": "跟住一滴水行一轉：蒸發、上升變冷、凝結成雲，最後落返地面再流返海洋。",
+      "points": ["太陽係水循環嘅能量來源", "升高時氣壓降低、氣溫下降，水蒸氣會凝結", "降水之後有徑流同滲入兩條路"],
+      "sourceRef": "Water cycle › Description › Overall process",
+      "chartType": "flowchart",
+      "background": "cosmos",
+      "mascot": "cat_point",
+      "data": {
+        "start": "sun",
+        "mascot": "cat_point",
+        "intro": "按「播放」跟住水滴行；遇到黃色「？」可以㩒「是／否」揀路線。",
+        "nodes": [
+          {"id": "sun", "type": "start", "text": "太陽曬暖水面，水蒸發", "note": "太陽能量令海、湖、河嘅水變成水蒸氣，升上大氣。", "next": "cool"},
+          {"id": "cool", "type": "decision", "text": "升到高空，夠冷未？", "note": "愈高氣壓愈低、溫度愈低；夠冷，水蒸氣先會凝結。", "yes": "cloud", "no": "up", "yesLabel": "夠冷", "noLabel": "未夠"},
+          {"id": "up", "type": "step", "text": "繼續上升、慢慢變冷", "note": "水蒸氣繼續被氣流托高，溫度繼續下降。", "next": "cool"},
+          {"id": "cloud", "type": "step", "text": "凝結成雲，雲點碰撞變大", "note": "水蒸氣凝結成小水點，夠多就成為雲；水點愈撞愈大。", "next": "land"},
+          {"id": "land", "type": "decision", "text": "降水落喺陸地？", "note": "大部分降水（約 78%）其實落返喺海洋。", "yes": "run", "no": "sea", "yesLabel": "陸地", "noLabel": "海洋"},
+          {"id": "run", "type": "end", "text": "徑流入河，或滲入地下", "note": "水沿地面流入河流，或者滲入地下補充含水層，最後流返海洋。"},
+          {"id": "sea", "type": "end", "text": "直接落返海洋，循環繼續", "note": "降水直接落喺海洋，水循環立即重新開始。"}
+        ]
+      }
+    },
+    {
+      "id": "four-steps",
+      "title": "水循環四步曲",
+      "icon": "🔄",
+      "summary": "水循環冇起點也冇終點：蒸發、凝結、降水、徑流與滲入，不斷循環。",
+      "points": ["水嘅總量長期大致不變", "水經歷液態、固態同氣態三種狀態", "能量以熱嘅形式喺相變時被吸收或釋放"],
+      "sourceRef": "Water cycle › lead / Processes leading to movements and phase changes",
+      "chartType": "cycle",
+      "background": "nebula",
+      "mascot": "cat_think",
+      "data": {
+        "center": {"text": "水循環", "char": "cat_wave"},
+        "intro": "㩒行星或者「播放」，睇飛碟沿水循環飛一圈。",
+        "stages": [
+          {"icon": "☀️", "title": "蒸發", "text": "太陽能量令水由液態變氣態。每年蒸發＋蒸散約 505,000 km³，當中 434,000 km³ 來自海洋。"},
+          {"icon": "☁️", "title": "凝結", "text": "水蒸氣升高後遇冷，凝結成小水點，形成雲；貼近地面就係霧。"},
+          {"icon": "🌧️", "title": "降水", "text": "雨、雪、冰雹等落返地面。每年約 505,000 km³，其中約 78% 落喺海洋。"},
+          {"icon": "🌊", "title": "徑流與滲入", "text": "水沿地面流入河流，或滲入地下補充含水層，最後返回海洋，繼續下一輪。"}
+        ]
+      }
+    },
+    {
+      "id": "evap-vs-cond",
+      "title": "蒸發 vs 凝結",
+      "icon": "⚖️",
+      "summary": "兩個過程剛好相反：一個吸熱、一個放熱，合力推動水循環。",
+      "points": ["蒸發會吸收熱量（汽化潛熱）", "凝結或融化會釋放能量同熱量", "蒸發亦係一種天然淨化：留低鹽分同雜質"],
+      "sourceRef": "Water cycle › lead & Processes",
+      "chartType": "compare",
+      "background": "asteroids",
+      "mascot": "blob_buddy",
+      "data": {
+        "left": {"title": "蒸發", "icon": "💨", "char": "alien_green"},
+        "right": {"title": "凝結", "icon": "☁️", "char": "blob_buddy"},
+        "intro": "逐行揭曉，睇「蒸發」同「凝結」有咩唔同。",
+        "rows": [
+          {"label": "變化方向", "a": "液態 → 氣態", "b": "氣態 → 液態"},
+          {"label": "熱量", "a": "吸收熱量（汽化潛熱）", "b": "釋放能量同熱量"},
+          {"label": "主要能量", "a": "主要係太陽輻射", "b": "高空氣壓低、溫度下降"},
+          {"label": "發生喺", "a": "海面、湖面、地面", "b": "大氣中（近地面就成霧）"},
+          {"label": "結果", "a": "留低鹽分，等於天然淨化", "b": "形成雲，為陸地補充淡水"}
+        ],
+        "verdict": "一吸熱、一放熱：兩個相反過程一齊推動水循環，亦幫手將熱量由熱帶帶去兩極。"
+      }
+    },
+    {
+      "id": "ideas-through-time",
+      "title": "人類幾時明白水循環？",
+      "icon": "🕰️",
+      "summary": "由古希臘到文藝復興，人類花咗成二千年先搞清楚「河水到底從哪裡來」。",
+      "points": ["古時以為河水主要來自地下", "亞里士多德同王充早已接近正確答案", "直到十九世紀初，現代理論先成主流"],
+      "sourceRef": "Water cycle › Historical interpretations",
+      "chartType": "timeline",
+      "background": "blackhole",
+      "mascot": "tentacle_buddy",
+      "data": {
+        "intro": "㩒「播放」，飛碟會帶你穿越二千多年嘅水循環思想史。",
+        "events": [
+          {"when": "約前 700", "icon": "📜", "title": "赫西俄德", "text": "希臘詩人寫下水蒸氣被風吹上高空、有時化成雨嘅想法。"},
+          {"when": "前 460", "icon": "🔁", "title": "封閉循環", "text": "阿那克薩哥拉等人提出水循環係一個封閉嘅循環。"},
+          {"when": "前 350", "icon": "☀️", "title": "亞里士多德", "text": "推測太陽令水蒸發，遇冷再凝結落返地面。"},
+          {"when": "公元 27–100", "icon": "📖", "title": "王充", "text": "東漢王充喺《論衡》準確描述水循環，但被同期人忽視。"},
+          {"when": "約 1500", "icon": "🖌️", "title": "仍然有誤解", "text": "達文西等人仍以為河水主要係海洋頂起嘅地下水。"},
+          {"when": "1580", "icon": "💡", "title": "帕利西", "text": "首位發表「單靠雨水已足夠維持河流」嘅人。"},
+          {"when": "1674", "icon": "🔬", "title": "科學驗證", "text": "佩羅等人以科學方法測試；十九世紀初成為主流。"}
+        ]
+      }
+    },
+    {
+      "id": "quiz-time",
+      "title": "小測驗：你記住幾多？",
+      "icon": "🧠",
+      "summary": "四條短題目，睇睇你有冇記住水循環嘅重點。",
+      "points": ["㩒選項即時揭曉答案", "每題都有簡短解釋"],
+      "sourceRef": "根據本旅程前面五站內容",
+      "chartType": "quiz",
+      "background": "moonbase",
+      "mascot": "space_dog",
+      "data": {
+        "intro": "揀一個答案，睇睇答啱未！",
+        "questions": [
+          {"q": "地球上大約幾多嘅水儲存喺海洋？", "options": ["約 50%", "約 75%", "約 97%", "幾乎 100%"], "answer": 2, "explain": "全球水量約 13.86 億 km³，海洋佔約 13.38 億 km³，即約 97%。"},
+          {"q": "水循環最主要嘅能量來源係乜？", "options": ["地熱", "太陽", "月亮引力", "風力"], "answer": 1, "explain": "水循環由太陽發出嘅能量推動，令水蒸發。"},
+          {"q": "水分子喺大氣入面平均停留約幾耐？", "options": ["約 9 日", "約 9 個月", "約 9 年", "約 9,000 年"], "answer": 0, "explain": "大氣係停留時間最短嘅儲存庫之一，平均約 9 日。"},
+          {"q": "邊位被視為第一個發表「單靠雨水已足夠維持河流」？", "options": ["亞里士多德", "達文西", "帕利西（1580）", "赫西俄德"], "answer": 2, "explain": "Bernard Palissy 喺 1580 年提出，被視為現代水循環理論嘅發現者。"}
+        ]
+      }
+    }
+  ]
+}

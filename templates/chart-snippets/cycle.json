@@ -1,0 +1,42 @@
+{
+  "id": "cycle-example",
+  "title": "飛碟日常循環",
+  "icon": "🔁",
+  "summary": "接單、煮餐、送餐、充電，天天重複。",
+  "chartType": "cycle",
+  "background": "asteroids",
+  "mascot": "alien_green",
+  "data": {
+    "center": {
+      "text": "每日循環",
+      "char": "cat_wave"
+    },
+    "stages": [
+      {
+        "icon": "📱",
+        "title": "接單",
+        "text": "指揮塔收到訂單並派畀最近嘅飛碟。"
+      },
+      {
+        "icon": "🍳",
+        "title": "煮餐",
+        "text": "廚房艙煮好外賣放入保溫箱。"
+      },
+      {
+        "icon": "🛸",
+        "title": "送餐",
+        "text": "飛碟沿航道送去客人門口。"
+      },
+      {
+        "icon": "🔋",
+        "title": "充電",
+        "text": "返停機坪充電，準備下一單。"
+      },
+      {
+        "icon": "⭐",
+        "title": "評價",
+        "text": "客人留言，基地根據評價改進。"
+      }
+    ]
+  }
+}

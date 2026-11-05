@@ -1,0 +1,33 @@
+{
+  "id": "quiz-example",
+  "title": "結業小測驗",
+  "icon": "🧠",
+  "summary": "兩條題目，睇睇你學識未。",
+  "chartType": "quiz",
+  "background": "asteroids",
+  "mascot": "blob_buddy",
+  "data": {
+    "questions": [
+      {
+        "q": "遇到流星雨應該點做？",
+        "options": [
+          "硬闖",
+          "改行安全航道",
+          "停機等雨停"
+        ],
+        "answer": 1,
+        "explain": "改行安全航道可以準時又安全。"
+      },
+      {
+        "q": "起飛前電量最少要幾多？",
+        "options": [
+          "20%",
+          "50%",
+          "80%"
+        ],
+        "answer": 2,
+        "explain": "超過 80% 先夠安全。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "flowchart-example",
+  "title": "派送流程（直向）",
+  "icon": "📦",
+  "summary": "一張外賣由落單到送到門口嘅流程；節點多會自動轉直向排版。",
+  "chartType": "flowchart",
+  "background": "nebula",
+  "mascot": "cat_point",
+  "data": {
+    "start": "o",
+    "nodes": [
+      {
+        "id": "o",
+        "type": "start",
+        "text": "收到訂單",
+        "next": "k"
+      },
+      {
+        "id": "k",
+        "type": "step",
+        "text": "廚房煮好",
+        "next": "w"
+      },
+      {
+        "id": "w",
+        "type": "decision",
+        "text": "天氣好唔好？",
+        "yes": "f",
+        "no": "s",
+        "yesLabel": "好",
+        "noLabel": "有流星雨"
+      },
+      {
+        "id": "s",
+        "type": "step",
+        "text": "改行安全航道",
+        "next": "f"
+      },
+      {
+        "id": "f",
+        "type": "step",
+        "text": "飛碟起飛",
+        "next": "d"
+      },
+      {
+        "id": "d",
+        "type": "decision",
+        "text": "客人喺家？",
+        "yes": "h",
+        "no": "l",
+        "yesLabel": "喺",
+        "noLabel": "唔喺"
+      },
+      {
+        "id": "l",
+        "type": "step",
+        "text": "放喺門口保溫箱",
+        "next": "e"
+      },
+      {
+        "id": "h",
+        "type": "step",
+        "text": "親手交畀客人",
+        "next": "e"
+      },
+      {
+        "id": "e",
+        "type": "end",
+        "text": "送達！收好評",
+        "next": null
+      }
+    ]
+  }
+}

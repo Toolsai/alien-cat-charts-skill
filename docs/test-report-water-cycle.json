@@ -1,0 +1,190 @@
+{
+  "site": "water-cycle demo",
+  "widths": {
+    "1280": {
+      "pages": {
+        "where-is-water": {
+          "type": "hotspots",
+          "clicked": [
+            "btn-nextx12",
+            "btn-labelsx1",
+            "btn-resetx1",
+            ".hs-spotx5"
+          ],
+          "status_changed": true,
+          "sound_on": {
+            "paused": false,
+            "t": 1.143273,
+            "pressed": "true",
+            "rs": 4,
+            "err": null,
+            "dur": 8
+          },
+          "sound_off": {
+            "paused": true,
+            "pressed": "false"
+          }
+        },
+        "one-drop": {
+          "type": "flowchart",
+          "clicked": [
+            "btn-play",
+            "btn-nextx3",
+            "btn-altx1",
+            "btn-resetx1",
+            ".fc-nodex7",
+            ".fc-labelx4"
+          ],
+          "status_changed": true
+        },
+        "four-steps": {
+          "type": "cycle",
+          "clicked": [
+            "btn-prevx12",
+            "btn-play",
+            "btn-nextx12",
+            "btn-dirx1",
+            ".cy-planetx4"
+          ],
+          "status_changed": true
+        },
+        "evap-vs-cond": {
+          "type": "compare",
+          "clicked": [
+            "btn-play",
+            "btn-nextx4",
+            "btn-allx1",
+            "btn-resetx1",
+            ".cp-rowx5"
+          ],
+          "status_changed": true
+        },
+        "ideas-through-time": {
+          "type": "timeline",
+          "clicked": [
+            "btn-prevx0",
+            "btn-play",
+            "btn-nextx6",
+            "btn-resetx1",
+            ".tl-dotx7"
+          ],
+          "status_changed": true
+        },
+        "quiz-time": {
+          "type": "quiz",
+          "clicked": [
+            "btn-nextx0",
+            "btn-peekx1",
+            "btn-resetx1",
+            "quiz-finish"
+          ],
+          "status_changed": true
+        }
+      },
+      "sound_after_nav": {
+        "on": true,
+        "playing": true,
+        "err": null
+      },
+      "errors": 0
+    },
+    "390": {
+      "pages": {
+        "where-is-water": {
+          "type": "hotspots",
+          "clicked": [
+            "btn-nextx12",
+            "btn-labelsx1",
+            "btn-resetx1",
+            ".hs-spotx5"
+          ],
+          "status_changed": true,
+          "sound_on": {
+            "paused": false,
+            "t": 1.140834,
+            "pressed": "true",
+            "rs": 4,
+            "err": null,
+            "dur": 8
+          },
+          "sound_off": {
+            "paused": true,
+            "pressed": "false"
+          }
+        },
+        "one-drop": {
+          "type": "flowchart",
+          "clicked": [
+            "btn-play",
+            "btn-nextx3",
+            "btn-altx1",
+            "btn-resetx1",
+            ".fc-nodex7",
+            ".fc-labelx4"
+          ],
+          "status_changed": true
+        },
+        "four-steps": {
+          "type": "cycle",
+          "clicked": [
+            "btn-prevx12",
+            "btn-play",
+            "btn-nextx12",
+            "btn-dirx1",
+            ".cy-planetx4"
+          ],
+          "status_changed": true
+        },
+        "evap-vs-cond": {
+          "type": "compare",
+          "clicked": [
+            "btn-play",
+            "btn-nextx4",
+            "btn-allx1",
+            "btn-resetx1",
+            ".cp-rowx5"
+          ],
+          "status_changed": true
+        },
+        "ideas-through-time": {
+          "type": "timeline",
+          "clicked": [
+            "btn-prevx0",
+            "btn-play",
+            "btn-nextx6",
+            "btn-resetx1",
+            ".tl-dotx7"
+          ],
+          "status_changed": true
+        },
+        "quiz-time": {
+          "type": "quiz",
+          "clicked": [
+            "btn-nextx0",
+            "btn-peekx1",
+            "btn-resetx1",
+            "quiz-finish"
+          ],
+          "status_changed": true
+        }
+      },
+      "sound_after_nav": {
+        "on": true,
+        "playing": true,
+        "err": null
+      },
+      "errors": 0
+    }
+  },
+  "failures": [],
+  "ignored": 0,
+  "order": [
+    "where-is-water",
+    "one-drop",
+    "four-steps",
+    "evap-vs-cond",
+    "ideas-through-time",
+    "quiz-time"
+  ],
+  "ok": true
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{lang}}"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{doc_title}}</title>
+<meta name="description" content="{{desc}}">
+{{fonts}}
+<link rel="stylesheet" href="assets/journey.css">
+</head>
+<body class="{{body_class}}" data-page="{{page_id}}">
+<div id="bg" aria-hidden="true"></div>
+<div class="wrap">
+  <header class="topbar">
+    <a class="chipbtn mint" id="top-home" href="index.html" title="回到目錄 / Back to the map">🏠 目錄</a>
+    <div class="tb-title" title="{{journey_title}}">{{journey_title}}</div>
+    <nav class="dots" aria-label="章節 / sections">{{dots}}</nav>
+    <button class="chipbtn" id="sound-btn" type="button" aria-pressed="false">🔇 開啟宇宙聲效</button>
+  </header>
+{{main}}
+{{pager}}
+</div>
+<script>window.JOURNEY={{journey_json}};window.PAGE_ID={{page_id_json}};</script>
+<script src="assets/journey.js"></script>
+</body></html>

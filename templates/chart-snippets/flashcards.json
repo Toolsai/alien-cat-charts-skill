@@ -1,0 +1,33 @@
+{
+  "id": "flashcards-example",
+  "title": "太空外賣術語卡",
+  "icon": "🃏",
+  "summary": "翻卡記住四個常用術語。",
+  "chartType": "flashcards",
+  "background": "cosmos",
+  "mascot": "cat_think",
+  "data": {
+    "cards": [
+      {
+        "icon": "🛸",
+        "front": "航道",
+        "back": "飛碟專用嘅安全飛行路線。"
+      },
+      {
+        "icon": "🔋",
+        "front": "滿電",
+        "back": "電量 100%，可以飛 8 小時。"
+      },
+      {
+        "icon": "🕳️",
+        "front": "黑洞警報",
+        "back": "前方有黑洞，立即改道。"
+      },
+      {
+        "icon": "⭐",
+        "front": "五星好評",
+        "back": "客人最高評價。"
+      }
+    ]
+  }
+}
