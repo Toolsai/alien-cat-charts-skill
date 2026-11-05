@@ -18,7 +18,7 @@
 
 每站只講一個概念：讀幾句重點、操作圖解，再用小測驗檢查理解。適合把長文章拆成容易消化的小段，或製作教學、流程說明及複習材料。
 
-這是一套 **AI 操作指南 + 網站產生工具**。需要由 AI 閱讀和整理內容；Python 工具負責把整理好的資料變成網站。
+這是一個**跟 AI Agent 一起玩的 Skill**。你提供內容，AI 幫你整理重點、製作圖解和檢查成果。
 
 ## 看看實際效果
 
@@ -48,17 +48,20 @@
 
 ## 快速開始
 
-### 1. 安裝到你的專案
+### 1. 請 AI 幫你安裝
 
-在專案資料夾開啟終端機，執行：
+把下面這段話貼給你的 AI Agent：
 
-```bash
-git clone https://github.com/Toolsai/alien-cat-charts-skill.git .agents/skills/alien-journey
+```text
+請幫我安裝這個 Skill：
+https://github.com/Toolsai/alien-cat-charts-skill
+
+只安裝到目前專案，不要全域安裝。
+請閱讀倉庫的 SKILL.md，按照你使用的工具完成專案內安裝，
+完成後告訴我如何呼叫 alien-journey。
 ```
 
-這是 **Codex 專案限定安裝**，技能名稱為 `alien-journey`。安裝後在下一則訊息呼叫；若未顯示，重新開啟專案。
-
-其他支援 `SKILL.md` 的 AI 工具，可按其安裝方式放置整個資料夾，或直接請 AI 閱讀本倉庫的 [SKILL.md](SKILL.md)。
+安裝完成後，按 AI 提供的方法開始使用。
 
 ### 2. 給 AI 一段內容
 
@@ -79,47 +82,11 @@ AI 會交付網站資料夾、ZIP 及畫面預覽。解壓 ZIP，開啟 `index.h
 - 鍵盤：`←` `→` 翻頁，`Home` 回目錄。
 - 右上角「🔇 開啟宇宙聲效」：自行開啟聲音。
 
-## 在本機製作示範
+## 小提醒
 
-需要 Python 3。以下指令在本倉庫根目錄執行，套件只安裝到 `.venv`。
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-
-python scripts/new_journey.py check src/journey.json
-python scripts/build_site.py --journey src/journey.json --out out --zip out.zip --strict
-```
-
-開啟 `out/index.html`。內附 `src/journey.json` 是水循環範例；製作自己的版本時，先複製一份再修改。
-
-### 檢查電腦與手機畫面
-
-```bash
-pip install -r requirements-test.txt
-playwright install chromium
-python test.py --site out --shots out-shots
-```
-
-測試涵蓋 1280 與 390 像素寬度，檢查互動、導航、文字溢出和聲效，並產生截圖與報告。以報告的 `GREEN ✅` 判斷結果，再自行查看截圖。此測試使用 Chromium；Safari、Firefox 未列入驗證。公開版本的[驗證紀錄](docs/VALIDATION.md)附有測試報告。
-
-## 檔案在哪裏？
-
-- [SKILL.md](SKILL.md)：AI 的完整操作指南。
-- [src/journey.json](src/journey.json)：網站內容資料。
-- [templates/](templates/)：頁面與 9 種圖解資料範本。
-- [scripts/](scripts/)：建立、驗證網站及素材工具。
-- [examples/](examples/)：水循環及全圖解範例。
-- [assets/](assets/)：角色、背景、樣式、互動程式及聲音。
-
-## 使用前知道這幾件事
-
-- 產出的網站是靜態檔案，沒有後端服務；一般瀏覽器可直接開啟。
-- 精確字型需連接 Google Fonts；離線會使用系統字型。
-- 此工具整理文章重點，並非逐字翻譯整篇文件；請核對來源、數字和 AI 的摘要。
-- 複雜流程建議拆成幾站。長字句應縮短，避免字體過小。
-- 建立網站不需要在這套工具內設定 API 金鑰；所用 AI 平台可能另有費用。
+- 一次提供一篇文章或一個主題，讓 AI 分成幾站，讀起來更輕鬆。
+- 內容太多或看不明白？直接請 AI「再簡單一點」或「換成漫畫解釋」。
+- AI 的摘要仍要核對；聲效預設關閉，想聽再自行開啟。
 
 ## 授權與來源
 
@@ -135,6 +102,16 @@ python test.py --site out --shots out-shots
 
 Alien Cat Charts is an AI skill and static-site kit with 9 interactive chart types, 12 characters, 6 space backgrounds, page navigation and optional ambient audio. It supports Traditional Chinese and English, with desktop and mobile layouts.
 
-Install this repository into your project's `.agents/skills/alien-journey`, then ask your agent to use `$alien-journey` with a source article. The agent reads and summarises it; the Python builder renders the site. No API key is required by the builder.
+Paste this into your AI agent:
+
+```text
+Please install this skill in the current project only, not globally:
+https://github.com/Toolsai/alien-cat-charts-skill
+
+Read SKILL.md, follow your tool's project-local skill installation method,
+and tell me how to invoke alien-journey when it is ready.
+```
+
+Then give your agent an article, URL or document and ask for an interactive learning journey. Your agent handles the content, site creation and checks.
 
 Try the [water-cycle demo](examples/water-cycle-site.zip): unzip and open `index.html`. Code and original assets are MIT licensed; the Wikipedia-derived demo text is CC BY-SA 4.0. See [LICENSE](LICENSE) and [source attribution](examples/water-cycle.SOURCE.md).
