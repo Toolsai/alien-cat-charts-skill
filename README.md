@@ -56,8 +56,7 @@
 請幫我安裝這個 Skill：
 https://github.com/Toolsai/alien-cat-charts-skill
 
-只安裝到目前專案，不要全域安裝。
-請閱讀倉庫的 SKILL.md，按照你使用的工具完成專案內安裝，
+請閱讀倉庫的 SKILL.md，按照你使用的工具完成安裝，
 完成後告訴我如何呼叫 alien-journey。
 ```
 
@@ -105,10 +104,10 @@ Alien Cat Charts is an AI skill and static-site kit with 9 interactive chart typ
 Paste this into your AI agent:
 
 ```text
-Please install this skill in the current project only, not globally:
+Please install this skill:
 https://github.com/Toolsai/alien-cat-charts-skill
 
-Read SKILL.md, follow your tool's project-local skill installation method,
+Read SKILL.md, follow your tool's skill installation method,
 and tell me how to invoke alien-journey when it is ready.
 ```
 
